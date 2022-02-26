@@ -1,1 +1,42 @@
 @import "../assets/scss/style.scss";
+
+.work-area {
+  color: $simple_gray;
+  background-color: $light_gray;
+  font-size: $font_size_14;
+  line-height: $default_line_height;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 60px;
+  background-color: $dark;
+}
+
+.main {
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.content-block {
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1200px) {
+    width: 1200px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
+}

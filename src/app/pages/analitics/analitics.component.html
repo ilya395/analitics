@@ -1,0 +1,132 @@
+<!-- <div class="analitics__title-block"></div> -->
+
+<div class="analitics__content-block">
+  <h1>
+    {{title}}
+  </h1>
+
+  <div class="content-block__row">
+    <div class="content-block__element">
+      <mat-form-field appearance="fill">
+        <mat-label>Аналитика вымывания квартир</mat-label>
+        <mat-select ([ngModel])="selectedProject">
+          <mat-option *ngFor="let project of projects" [value]="project.value">
+            {{project.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="content-block__element content-block__element_in-column">
+      <span class="element__title">
+        Формат отображения данных:
+      </span>
+      <mat-button-toggle-group name="units" aria-label="Units">
+        <mat-button-toggle value="0">%</mat-button-toggle>
+        <mat-button-toggle value="1">шт.</mat-button-toggle>
+        <mat-button-toggle value="2">м<sup>2</sup></mat-button-toggle>
+        <mat-button-toggle value="3">руб.</mat-button-toggle>
+        <mat-button-toggle value="4">руб./м<sup>2</sup></mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+  </div>
+
+  <div class="content-block__with-row">
+    <button mat-flat-button class="custom-buttom">Экспорт в Excell</button>
+  </div>
+
+  <div class="graphic-block">
+    <h2>
+      В разрезе типов
+    </h2>
+    <div class="graphic-block__row">
+      <div class="graphic-block__element">
+        <table-component
+          [dataSource]="typesTableData"
+          [displayedColumns]="typesTableHeaders"
+        ></table-component>
+      </div>
+      <div class="graphic-block__element">
+        Polar Area Chart
+      </div>
+      <div class="graphic-block__element">
+        Line Chart
+      </div>
+    </div>
+  </div>
+
+  <div class="graphic-block">
+    <h2>
+      В разрезе групп площадей
+    </h2>
+    <div class="graphic-block__row">
+      <div class="graphic-block__element">
+        table
+      </div>
+      <div class="graphic-block__element">
+        title <br>
+        Doughnut and Pie Charts
+      </div>
+      <div class="graphic-block__element">
+        title <br>
+        Doughnut and Pie Charts
+      </div>
+    </div>
+  </div>
+
+  <div class="graphic-block">
+    <h2>
+      В разрезе этажей
+    </h2>
+    <div class="graphic-block__row">
+      <div class="graphic-block__element">
+        table
+      </div>
+      <div class="graphic-block__element graphic-block__element_long">
+        XXX
+      </div>
+    </div>
+  </div>
+
+  <div class="graphic-block">
+    <h2>
+      В разрезе БС
+    </h2>
+    <div class="graphic-block__row">
+      <div class="graphic-block__element">
+        table
+      </div>
+      <div class="graphic-block__element graphic-block__element_long">
+        XXX
+      </div>
+    </div>
+  </div>
+
+  <div class="graphic-block">
+    <h2>
+      В разрезе домов
+    </h2>
+    <div class="graphic-block__row">
+      <div class="graphic-block__element">
+        table
+      </div>
+      <div class="graphic-block__element graphic-block__element_long">
+        XXX
+      </div>
+    </div>
+  </div>
+
+  <div class="graphic-block">
+    <h2>
+      В разрезе меток
+    </h2>
+    <div class="graphic-block__row">
+      <div class="graphic-block__element">
+        table
+      </div>
+      <div class="graphic-block__element graphic-block__element_long">
+        XXX
+      </div>
+    </div>
+  </div>
+
+</div>

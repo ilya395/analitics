@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AnaticsComponent } from './component/analitics/analitics.component';
-import { NotFoundComponent } from './component/not-found/not-found.component';
-import { OneAnaticsPageComponent } from './component/one-analitic-page/one-analitic-page.component';
-import { LayoutComponent } from './layouts/layout/layout.component';
+import { AnaticsComponent } from './pages/analitics/analitics.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { OneAnaticsPageComponent } from './pages/one-analitic-page/one-analitic-page.component';
 
 const routes: Routes = [
   // {
