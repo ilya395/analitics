@@ -49,7 +49,10 @@
         Polar Area Chart
       </div>
       <div class="graphic-block__element">
-        Line Chart
+        <custom-linechart
+          [dataSource]="typesTableData"
+          [displayedHeaders]="typesTableHeaders"
+        ></custom-linechart>
       </div>
     </div>
   </div>

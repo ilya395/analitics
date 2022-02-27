@@ -12,6 +12,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { TableComponent } from './component/table/table.component';
 import { MatTableModule } from '@angular/material/table';
+import { LinechartComponent } from './component/linechart/linechart.component';
+import { PolarareaComponent } from './component/polararea/polararea.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { MatTableModule } from '@angular/material/table';
     OneAnaticsPageComponent,
     NotFoundComponent,
     TableComponent,
+    LinechartComponent,
+    PolarareaComponent,
   ],
   imports: [
     BrowserModule,
