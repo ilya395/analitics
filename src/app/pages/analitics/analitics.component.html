@@ -46,7 +46,10 @@
         ></table-component>
       </div>
       <div class="graphic-block__element">
-        Polar Area Chart
+        <custom-polararea
+          [dataSource]="typesTableData"
+          [displayedHeaders]="typesTableHeaders"
+        ></custom-polararea>
       </div>
       <div class="graphic-block__element">
         <custom-linechart

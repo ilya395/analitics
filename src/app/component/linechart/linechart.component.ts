@@ -18,15 +18,14 @@ export class LinechartComponent implements OnInit {
 
   ngOnInit(): void {
     Chart.register(...registerables);
-    console.log(this.dataSource.map(item => Number(item.saled)))
     this.Linechart = new Chart(
       'line-chart-types',
       {
         type: 'line',
         data: {
-          labels: this.displayedHeaders,
+          labels: this.displayedHeaders, // x
           datasets: [{
-            label: 'My First Dataset',
+            label: 'Динамика продаж',
             data: this.dataSource.map(item => Number(item.saled)),
             fill: false,
             borderColor: 'rgb(75, 192, 192)',
@@ -35,33 +34,6 @@ export class LinechartComponent implements OnInit {
         },
       }
     );
-    console.log(this.Linechart)
-    // this.Linechart = new Chart('line-chart-types', {
-    //   type: 'line',
-    //   data: {
-    //     labels: this.displayedHeaders,
-    //     datasets: [
-    //       {
-    //         data: this.dataSource,
-    //         borderColor: '#3cb371',
-    //         backgroundColor: "#0000FF",
-    //       }
-    //     ]
-    //   },
-    //   options: {
-    //     legend: {
-    //       display: false
-    //     },
-    //     scales: {
-    //       xAxes: [{
-    //         display: true
-    //       }],
-    //       yAxes: [{
-    //         display: true
-    //       }],
-    //     }
-    //   }
-    // });
   }
 
 }
