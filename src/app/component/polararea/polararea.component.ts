@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
-import { ITableElement } from 'src/app/models/tables/table.model';
+import { IObjectTypesItem } from 'src/app/models/object-types/object-types.model';
 
 @Component({
   selector: 'custom-polararea',
@@ -9,8 +9,8 @@ import { ITableElement } from 'src/app/models/tables/table.model';
 })
 export class PolarareaComponent implements OnInit {
 
-  @Input() dataSource: ITableElement[] = [];
-  @Input() displayedHeaders: string[] = [];
+  @Input() dataSource: IObjectTypesItem[] = [];
+  @Input() displayedHeaders: number[] = [];
 
   Polararea: any = null;
 
@@ -26,7 +26,7 @@ export class PolarareaComponent implements OnInit {
           labels: this.displayedHeaders, // x
           datasets: [{
             label: 'My First Dataset',
-            data: this.dataSource.map(item => Number(item.saled)),
+            data: this.dataSource.map(item => Number(item.number)) || [],
             borderColor: 'rgb(75, 192, 192)',
           }]
         },

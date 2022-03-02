@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ALL_PROJECTS, TEST_DATA_TYPES } from 'src/app/constants';
+import { ALL_PROJECTS, TEST_DATA_TYPES, TEST_DATA_TYPES_STATUS } from 'src/app/constants';
 import { IProject } from 'src/app/models/projects/project.model';
 
 @Component({
@@ -14,6 +14,9 @@ export class AnaticsComponent implements OnInit {
 
   typesTableData = TEST_DATA_TYPES;
   typesTableHeaders = ['type', 'saled', 'balance', 'total'];
+
+  typesPolarAreaData = TEST_DATA_TYPES_STATUS;
+  typesPolarAreaHeaders = [1, 2, 3, 4, 5];
 
   ngOnInit() {
     this.selectedProject = this.projects[1].value;

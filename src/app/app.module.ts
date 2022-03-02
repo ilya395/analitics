@@ -14,6 +14,7 @@ import { TableComponent } from './component/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { LinechartComponent } from './component/linechart/linechart.component';
 import { PolarareaComponent } from './component/polararea/polararea.component';
+import { TypesPieChartComponent } from './component/types-pie-chart/types-pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PolarareaComponent } from './component/polararea/polararea.component';
     TableComponent,
     LinechartComponent,
     PolarareaComponent,
+    TypesPieChartComponent,
   ],
   imports: [
     BrowserModule,

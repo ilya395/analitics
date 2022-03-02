@@ -46,10 +46,14 @@
         ></table-component>
       </div>
       <div class="graphic-block__element">
-        <custom-polararea
-          [dataSource]="typesTableData"
-          [displayedHeaders]="typesTableHeaders"
-        ></custom-polararea>
+        <!-- <custom-polararea
+          [dataSource]="typesPolarAreaData"
+          [displayedHeaders]="typesPolarAreaHeaders"
+        ></custom-polararea> -->
+        <app-types-pie-chart
+          [dataSource]="typesPolarAreaData"
+          [displayedHeaders]="typesPolarAreaHeaders"
+        ></app-types-pie-chart>
       </div>
       <div class="graphic-block__element">
         <custom-linechart
