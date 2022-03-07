@@ -16,7 +16,7 @@ export class AnaticsComponent implements OnInit {
   typesTableHeaders = ['type', 'saled', 'balance', 'total'];
 
   typesPolarAreaData = TEST_DATA_TYPES_STATUS;
-  typesPolarAreaHeaders = [1, 2, 3, 4, 5];
+  typesPolarAreaHeaders = [1, 2, 3, 4, 5, 6]; // типы статусов
 
   ngOnInit() {
     this.selectedProject = this.projects[1].value;

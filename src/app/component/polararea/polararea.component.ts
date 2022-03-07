@@ -26,7 +26,7 @@ export class PolarareaComponent implements OnInit {
           labels: this.displayedHeaders, // x
           datasets: [{
             label: 'My First Dataset',
-            data: this.dataSource.map(item => Number(item.number)) || [],
+            data: this.dataSource[0].list && this.dataSource[0].list.map(item => Number(item.number)) || [],
             borderColor: 'rgb(75, 192, 192)',
           }]
         },

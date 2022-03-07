@@ -41,35 +41,39 @@ export const TEST_DATA_TYPES = [
 
 export const TEST_DATA_TYPES_STATUS = [
   {
-    type: 1,
-    status: 1,
-    number: 10,
+    roomType: 1,
+    list: [
+      {
+        status: 15,
+        number: 10,
+      },
+      {
+        status: 35,
+        number: 15,
+      },
+      {
+        status: 4,
+        number: 23,
+      }
+    ],
   },
   {
-    type: 2,
-    status: 1,
-    number: 20,
-  },
-  {
-    type: 3,
-    status: 1,
-    number: 30,
-  },
-  {
-    type: 1,
-    status: 2,
-    number: 50,
-  },
-  {
-    type: 1,
-    status: 3,
-    number: 70,
-  },
-  {
-    type: 2,
-    status: 2,
-    number: 80,
-  },
+    roomType: 2,
+    list: [
+      {
+        status: 15,
+        number: 320,
+      },
+      {
+        status: 35,
+        number: 325,
+      },
+      {
+        status: 4,
+        number: 333,
+      }
+    ],
+  }
 ] as IObjectTypesItem[];
 
 export const TEST_DATA_TYPES_STATUS_THREE = [
